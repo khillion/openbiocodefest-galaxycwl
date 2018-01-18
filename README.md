@@ -8,5 +8,18 @@ The work is based on this [branch](https://github.com/common-workflow-language/g
 * Clone this [branch](https://github.com/common-workflow-language/galaxy)
 * Install planemo (`pip install planemo`)
 
-## Warm up - use planemo to run a simple example
+## Use cwl conformance tests to run a simple example
+
+## Use planemo to run a simple example
+**currently broken** @jmchilton is working on it.
+
+```bash
+mkdir galaxycwl
+cd galaxycwl
+git clone https://github.com/khillion/openbiocodefest-galaxycwl
+virtualenv -p python venv
+. venv/bin/activate
+pip install planemo
+planemo run --cwl --cwl_galaxy_root=galaxy 1st-tool.cwl echo-job.yml
+```
 

@@ -1,7 +1,7 @@
 # Use CWL on Galaxy - OpenBio Winter Codefest 2018
 
 Here will be summed up the work done during the OpenBio WInter Codefest 2018 in Boston on the use of CWL in Galaxy.
-The work is based on this [branch](https://github.com/common-workflow-language/galaxy) that tries to allow Galaxy ro run CWL tool.
+The work is based on this [branch](https://github.com/common-workflow-language/galaxy) that tries to allow Galaxy ro run CWL tool. Many information about this branch is documented [HERE](https://github.com/common-workflow-language/galaxy/pull/47).
 
 ## Prerequisites
 

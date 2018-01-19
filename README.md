@@ -13,21 +13,25 @@ Conformance tests are run in galaxy by "mirroring" the conformance tests from th
 For instance, to run all of the conformance tests:
 
 ```bash
-
+./run_tests.sh -api test/api/test_cwl_conformance_v1_0.py
 ```
 
 and to run one in particular:
 
 ```bash
-
+./run_tests.sh -api test/api/test_cwl_conformance_v1_0.py:CwlConformanceTestCase.test_conformance_v1_0_6
 ```
 
 ## run cwl tools and workflows directly in galaxy from the command line
 @jmchilton created a script called run_cwl in the scripts folder of the galaxy-cwl branch. This script allows to run cwl jobs from the command line using a syntax close to that of cwl-runner. To run it:
 
+1. Create a Galaxy admin user and configure Galaxy:
+   - cp config/galaxy.ini.sample config/galaxy.ini
+   - add this user as an admin in `admin_users =`
+   - set `allow_path_paste = True`
 1. Launch Galaxy with run.sh
-2. Go to 127.0.0.1 and copy the admin API key provided
-3. run it using 
+2. Go to 127.0.0.1, log in as the admin user, and get the user API key in Preferences
+3. run the script in another terminal:
 
 ```bash
 source .venv/bin/activate
